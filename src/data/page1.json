@@ -1,0 +1,64 @@
+{
+  "api": {
+    "url": "url",
+    "method": "POST",
+    "header": ["token1", "token2"],
+    "body": ["name", "address", "sex", "name"]
+  },
+  "forms": [
+    {
+      "component": "text",
+      "label": "姓名",
+      "description": "请输入同学的姓名",
+      "placeholder": "请输入姓名",
+      "necessary": true,
+      "field": "name",
+      "type": "string",
+      "defaultValue": "2"
+    },
+    {
+      "component": "text",
+      "label": "地址",
+      "description": "请输入家庭地址",
+      "placeholder": "请输入地址",
+      "necessary": true,
+      "field": "address",
+      "type": "string",
+      "defaultValue": "1"
+    },
+    {
+      "component": "radio",
+      "label": "性别",
+      "options": [
+        { "id": 1, "value": "男" },
+        { "id": 2, "value": "女" },
+        { "id": 3, "value": "未知" }
+      ],
+      "defaultOption": { "id": 1, "value": "男" },
+      "description": "请输入同学性别",
+      "necessary": true,
+      "field": "sex",
+      "type": "number",
+      "key": "id"
+    },
+    {
+      "component": "checkbox",
+      "label": "爱好",
+      "options": [
+        { "id": 1, "value": "抽烟" },
+        { "id": 2, "value": "喝酒" },
+        { "id": 3, "value": "烫头" },
+        { "id": 3, "value": "其他" }
+      ],
+      "defaultOptions": [
+        { "id": 1, "value": "抽烟" },
+        { "id": 2, "value": "喝酒" }
+      ],
+      "description": "请输入同学爱好",
+      "necessary": true,
+      "field": "hobby",
+      "type": "number",
+      "key": "id"
+    }
+  ]
+}
